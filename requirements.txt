@@ -1,6 +1,6 @@
 numpy==1.22.4
 pandas==1.4.2
-matplotplib==3.5.1
+matplotplib
 pandas-datareader==0.10.0
 streamlit==1.10.0
 streamlit-option-menu==0.3.2
@@ -9,6 +9,3 @@ scikit-learn==1.0.2
 plotly==5.6.0
 fbprophet==0.7.1
 statsmodels==0.13.2
-
-
-
