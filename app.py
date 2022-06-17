@@ -44,6 +44,7 @@ if selected == 'About Us' :
         st.write("<p style='text-align: center; text-justify: inter-word; font-size:17px;'>Theophilus Jesse Soetedjo</p>", unsafe_allow_html=True)
 else :
     st.title("Stock Trend Prediction")
+    
     user_input = st.text_input('Enter stock ticker from yahoo finance (https://finance.yahoo.com/)', 'AAPL')
     df = data.DataReader(user_input, 'yahoo', start, end)
     df = df.reset_index()
@@ -106,7 +107,7 @@ else :
         y_predicted = model.predict(x_test_array)
         MAE = round(metrics.mean_absolute_error(y_test, y_predicted) * 100, 2)
         RMSE = round(metrics.mean_squared_error(y_test, y_predicted, squared=False) * 100, 2)
-        MSE = round(metrics.mean_squared_error(y_test, y_predicted) * 100, 2)
+        MSE = round(metrics.mean_squared_error(y_test, y_predicted) * 100, 3)
 
         scale = scaler.scale_
         scale_factor = 1/scale[0]
