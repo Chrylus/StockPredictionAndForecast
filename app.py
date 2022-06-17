@@ -160,7 +160,7 @@ else :
         st.write('Forecast for next ' + str(year) + " years")
         fig1 = plot_plotly(model_forecast, forecast, xlabel='Date', ylabel='Price')
         st.plotly_chart(fig1, use_container_width=True)
-        st.write("Disclaimer : This forecasting is not 100%% accurate since the system only predicts based on historical price data and not external factor, such as, market situation, political and economic factors, textual information in the form of financial new articles, etc.")
+        st.write("Disclaimer : This forecasting is not 100% accurate since the system only predicts based on historical price data and not external factor, such as, market situation, political and economic factors, textual information in the form of financial new articles, etc.")
 
     elif selected == "Data Analysis":
         # decribing data
